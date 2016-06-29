@@ -14,8 +14,11 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/projects"
 alias g="git"
+alias ga="git add ."
+alias gs="git status"
 alias h="history"
 alias j="jobs"
+alias c="clear"
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -86,7 +89,7 @@ jscbin="/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Resources
 unset jscbin;
 
 # Trim new lines and copy to clipboard
-alias c="tr -d '\n' | pbcopy"
+#alias c="tr -d '\n' | pbcopy"
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
